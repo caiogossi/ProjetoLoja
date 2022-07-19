@@ -1,0 +1,10 @@
+<div style="text-align:right">
+    {% if user.is_authenticated %}
+        <h3> Olá! Bem-vindo! <button type="button"><a href="/logout">Logout</a></button> </h3>
+    {% else %}
+        <h3> Ops! Parece que você não está logado! <button type="button"><a href="/login">Login</a></button> </h3>
+    {% endif %}
+</div>
+<hr>
+<br>
+<br>
